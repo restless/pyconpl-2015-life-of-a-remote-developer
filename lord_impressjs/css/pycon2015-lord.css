@@ -1,0 +1,194 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Racing+Sans+One|Satisfy);
+
+body {
+    font-size: 200%;
+    text-align: center;
+    font-family: Libre Baskerville;
+}
+
+span.delayed {
+  opacity:0;
+  transition:opacity 4s, 2s linear;*
+}
+.present span.delayed {
+  opacity:1;
+}
+
+p {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+em {
+    font-family: Satisfy;
+    font-size: 142%;
+}
+
+strong {
+    font-family: Racing Sans One;
+    font-size: 127%;
+    letter-spacing: -2px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+li {
+    font-size: 125%;
+    font-family: serif;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    line-height: 1.8em;
+    margin-left: -50px;
+}
+
+ul li{
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#ThreeD H1 {
+    font-family: Racing Sans One;
+    font-size: 300%;
+}
+
+#thequestion p {
+    font-family: Racing Sans One;
+}
+
+
+
+/*
+    ... so we define display to `inline-block` to enable transforms and
+    transition duration to 0.5s ...
+*/
+#ing b {
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+/*
+    ... and we want 'positioning` word to move up a bit when the step gets
+    `present` class ...
+*/
+#ing.present .positioning {
+    -webkit-transform: translateY(-10px);
+    -moz-transform:    translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    -o-transform:      translateY(-10px);
+    transform:         translateY(-10px);
+}
+
+/*
+    ... 'rotating' to rotate a quarter of a second later ...
+*/
+#ing.present .rotating {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform:    rotate(-10deg);
+    -ms-transform:     rotate(-10deg);
+    -o-transform:      rotate(-10deg);
+    transform:         rotate(-10deg);
+
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay:    0.25s;
+    -ms-transition-delay:     0.25s;
+    -o-transition-delay:      0.25s;
+    transition-delay:         0.25s;
+}
+
+/*
+    ... and 'scaling' to scale down after another quarter of a second.
+*/
+#ing.present .scaling {
+    -webkit-transform: scale(0.7);
+    -moz-transform:    scale(0.7);
+    -ms-transform:     scale(0.7);
+    -o-transform:      scale(0.7);
+    transform:         scale(0.7);
+
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+}
+
+/*
+    Client - detailed
+*/
+
+
+#client-detailed-1 blockquote{
+    font-size: 10px;
+}
+
+#communication-long-story p{
+    font-size: 11px;
+}
+
+#communication-short-story p{
+    font-size: 12px;
+    text-align: left;
+}
+
+#communication-short-story p strong{
+    letter-spacing: +2px;
+    
+}
+
+#numbers-and-bullets h1{
+    margin-bottom: 1em;
+}
+    
+#numbers-and-bullets p{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#numbers-and-bullets ul, #numbers-and-bullets ol{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#numbers-and-bullets li{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#cookiecutter_json p{
+   text-align: left;
+}
+
+#django-settings p, #virtual_environments p, #virtual_environments_2 p, #ansible-playbooks p, #ansible-inventory p, #ansible-playbooks2 p, #ansible-playbooks3 p, #ansistrano p, #before_setup p, #before_symlink p, #after_symlink p{
+    text-align: left;
+}
+
+#django-settings pre, #virtual_environments pre, #virtual_environments_2 pre, #ansible-playbooks pre, #ansible-inventory pre, #ansible-playbooks2 pre, #ansible-playbooks3 pre, #ansistrano pre, #before_setup pre, #before_symlink pre, #after_symlink pre{
+    text-align: left;
+}
+
+#summary p, #thank-you p, #summary li, #thank-you li{
+    text-align: left;
+    font-size: 18px;
+}
